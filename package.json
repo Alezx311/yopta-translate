@@ -11,12 +11,16 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:yopta-translate.toYopta",
-    "onCommand:yopta-translate.toJS"
+    "onCommand:yopta-translate.toJS",
+    "onCommand:yopta-translate.toYopta"
   ],
   "main": "./extension.js",
   "contributes": {
     "commands": [
+      {
+        "command": "yopta-translate.toJs",
+        "title": "Yopta to JS"
+      },
       {
         "command": "yopta-translate.toYopta",
         "title": "JS to Yopta"
