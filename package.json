@@ -1,0 +1,46 @@
+{
+  "name": "yopta-translate",
+  "displayName": "Javascript to Yopta",
+  "publisher": "alezx311",
+  "description": "Translate JS to YoptaScript",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:yopta-translate.toYopta",
+    "onCommand:yopta-translate.toJS"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "yopta-translate.toYopta",
+        "title": "JS to Yopta"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "yarn run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alezx311/yopta-translate.git"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.54.0",
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^12.11.7",
+    "eslint": "^7.19.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.2.1",
+    "typescript": "^4.1.3",
+    "vscode-test": "^1.5.0"
+  }
+}
