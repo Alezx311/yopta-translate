@@ -4,7 +4,7 @@ Simple translator from JavaScript to YoptaScript.
 
 ## Usage
 
-- Install Extension
+- Install [Extension](https://marketplace.visualstudio.com/items?itemName=alezx311.yopta-translate)
 - Press Ctrl + Shift + P
 - Type "JS to Yopta"
 - Press Enter
